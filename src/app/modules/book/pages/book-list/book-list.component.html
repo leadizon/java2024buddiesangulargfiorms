@@ -1,0 +1,8 @@
+<div>
+    <h3>List of Books</h3>
+</div>
+
+<div *ngFor = "let data of bookList">
+    <app-book-item [bookInput]="data"></app-book-item>
+    <br><br>
+</div>

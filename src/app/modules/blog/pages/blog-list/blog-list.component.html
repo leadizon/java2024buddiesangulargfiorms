@@ -1,0 +1,8 @@
+<div>
+    <h3>List of Books</h3>
+</div>
+
+<div *ngFor = "let data of blogList">
+    <app-blog-item [blogInput]="data"></app-blog-item>
+    <br><br>
+</div>
