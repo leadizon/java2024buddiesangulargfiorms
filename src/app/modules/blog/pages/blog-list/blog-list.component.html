@@ -1,6 +1,11 @@
+
 <div>
-    <h3>List of Books</h3>
+    <br/>
+    <h3>List of Blogs</h3>
+    <app-command-bar [page]="'blog'"></app-command-bar>
+    <br/><br/>
 </div>
+
 
 <div *ngFor = "let data of blogList">
     <app-blog-item [blogInput]="data"></app-blog-item>

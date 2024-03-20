@@ -1,8 +1,14 @@
+
 <div>
+    <br/>
     <h3>List of Books</h3>
+    <app-command-bar [page]="'book'"></app-command-bar>
+    <br/><br/>
 </div>
 
 <div *ngFor = "let data of bookList">
-    <app-book-item [bookInput]="data"></app-book-item>
+    <app-book-item 
+    [bookInput]="data"
+    (actionEmitter)="executeAction($event)"></app-book-item>
     <br><br>
 </div>
